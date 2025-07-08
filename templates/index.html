@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vùng Bóng Tối - Game Hành Động</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background: linear-gradient(270deg, #000000, #1a1a2e, #16213e);
+      background-size: 600% 600%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      background: linear-gradient(to right, #00f5d4, #00bbf9);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .hero {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #cfcfcf;
+      margin-bottom: 30px;
+    }
+    .btn-play {
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 40px;
+      background: linear-gradient(to right, #ff4d6d, #c9184a);
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 20px #ff4d6d;
+      transition: 0.4s;
+    }
+    .btn-play:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 30px #ff4d6d;
+    }
+    .characters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 50px 20px;
+      gap: 30px;
+    }
+    .card {
+      background: #1e1e2f;
+      border-radius: 20px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px #00bbf9;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vùng Bóng Tối</h1>
+  </header>
+  <div class="hero">
+    <p>Bước vào thế giới đen tối. Chọn anh hùng của bạn. Chiến đấu để sống sót.</p>
+    <button class="btn-play">Chơi Ngay</button>
+  </div>
+
+  <section class="characters">
+    <div class="card">
+      <img src="https://disneyartonmain.com/cdn/shop/products/Dark_Warrior__70301_26bf19d7-635d-47fe-8802-64365eac04f2.jpg?v=1578762648" alt="Chiến Binh Bóng Tối">
+      <h3>Chiến Binh Bóng Tối</h3>
+      <p>Thông thạo kiếm thuật. Sát thương cực cao.</p>
+    </div>
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQUzVpl-L7QlQO5sWP7qAjCjmcfzq8AL8EA&s" alt="Pháp Sư Bóng Tối">
+      <h3>Pháp Sư Bóng Tối</h3>
+      <p>Kiểm soát nguyên tố. Tấn công từ xa.</p>
+    </div>
+    <div class="card">
+      <img src="https://w0.peakpx.com/wallpaper/543/279/HD-wallpaper-dark-archer-archer-dark.jpg" alt="Cung Thủ Bóng Đêm">
+      <h3>Cung Thủ Bóng Đêm</h3>
+      <p>Âm thầm hạ gục kẻ địch từ khoảng cách xa.</p>
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2025 Studio Bóng Tối. Mọi quyền được bảo lưu.
+  </div>
+</body>
+</html>
